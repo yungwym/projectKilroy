@@ -9,11 +9,15 @@
 /* Begin PBXBuildFile section */
 		FFF7978A1F23DE5E00D3300A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FFF797891F23DE5E00D3300A /* main.m */; };
 		FFF7978D1F23DE5E00D3300A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FFF7978C1F23DE5E00D3300A /* AppDelegate.m */; };
-		FFF797901F23DE5E00D3300A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FFF7978F1F23DE5E00D3300A /* ViewController.m */; };
 		FFF797931F23DE5E00D3300A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFF797911F23DE5E00D3300A /* Main.storyboard */; };
 		FFF797961F23DE5E00D3300A /* CraftON_.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FFF797941F23DE5E00D3300A /* CraftON_.xcdatamodeld */; };
 		FFF797981F23DE5F00D3300A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFF797971F23DE5F00D3300A /* Assets.xcassets */; };
 		FFF7979B1F23DE5F00D3300A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFF797991F23DE5F00D3300A /* LaunchScreen.storyboard */; };
+		FFF797AD1F267E3C00D3300A /* SplashViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FFF797AC1F267E3C00D3300A /* SplashViewController.m */; };
+		FFF797B01F267E4400D3300A /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FFF797AF1F267E4400D3300A /* MenuViewController.m */; };
+		FFF797B31F267E5100D3300A /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FFF797B21F267E5100D3300A /* DetailViewController.m */; };
+		FFF797B61F267E5700D3300A /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FFF797B51F267E5700D3300A /* MapViewController.m */; };
+		FFF797BC1F26A6B600D3300A /* BeerCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FFF797BB1F26A6B600D3300A /* BeerCollectionViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,13 +25,21 @@
 		FFF797891F23DE5E00D3300A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		FFF7978B1F23DE5E00D3300A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		FFF7978C1F23DE5E00D3300A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		FFF7978E1F23DE5E00D3300A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		FFF7978F1F23DE5E00D3300A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		FFF797921F23DE5E00D3300A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FFF797951F23DE5E00D3300A /* CraftON_.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CraftON_.xcdatamodel; sourceTree = "<group>"; };
 		FFF797971F23DE5F00D3300A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FFF7979A1F23DE5F00D3300A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FFF7979C1F23DE5F00D3300A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FFF797AB1F267E3C00D3300A /* SplashViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SplashViewController.h; path = ../SplashViewController.h; sourceTree = "<group>"; };
+		FFF797AC1F267E3C00D3300A /* SplashViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SplashViewController.m; path = ../SplashViewController.m; sourceTree = "<group>"; };
+		FFF797AE1F267E4400D3300A /* MenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MenuViewController.h; path = ../MenuViewController.h; sourceTree = "<group>"; };
+		FFF797AF1F267E4400D3300A /* MenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MenuViewController.m; path = ../MenuViewController.m; sourceTree = "<group>"; };
+		FFF797B11F267E5100D3300A /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DetailViewController.h; path = ../DetailViewController.h; sourceTree = "<group>"; };
+		FFF797B21F267E5100D3300A /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DetailViewController.m; path = ../DetailViewController.m; sourceTree = "<group>"; };
+		FFF797B41F267E5700D3300A /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MapViewController.h; path = ../MapViewController.h; sourceTree = "<group>"; };
+		FFF797B51F267E5700D3300A /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MapViewController.m; path = ../MapViewController.m; sourceTree = "<group>"; };
+		FFF797BA1F26A6B600D3300A /* BeerCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BeerCollectionViewCell.h; sourceTree = "<group>"; };
+		FFF797BB1F26A6B600D3300A /* BeerCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BeerCollectionViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,13 +74,20 @@
 			children = (
 				FFF7978B1F23DE5E00D3300A /* AppDelegate.h */,
 				FFF7978C1F23DE5E00D3300A /* AppDelegate.m */,
-				FFF7978E1F23DE5E00D3300A /* ViewController.h */,
-				FFF7978F1F23DE5E00D3300A /* ViewController.m */,
-				FFF797911F23DE5E00D3300A /* Main.storyboard */,
+				FFF797AB1F267E3C00D3300A /* SplashViewController.h */,
+				FFF797AC1F267E3C00D3300A /* SplashViewController.m */,
+				FFF797AE1F267E4400D3300A /* MenuViewController.h */,
+				FFF797AF1F267E4400D3300A /* MenuViewController.m */,
+				FFF797B11F267E5100D3300A /* DetailViewController.h */,
+				FFF797B21F267E5100D3300A /* DetailViewController.m */,
+				FFF797B41F267E5700D3300A /* MapViewController.h */,
+				FFF797B51F267E5700D3300A /* MapViewController.m */,
+				FFF797BA1F26A6B600D3300A /* BeerCollectionViewCell.h */,
+				FFF797BB1F26A6B600D3300A /* BeerCollectionViewCell.m */,
 				FFF797971F23DE5F00D3300A /* Assets.xcassets */,
-				FFF797991F23DE5F00D3300A /* LaunchScreen.storyboard */,
 				FFF7979C1F23DE5F00D3300A /* Info.plist */,
 				FFF797941F23DE5E00D3300A /* CraftON_.xcdatamodeld */,
+				FFF797BD1F26A87B00D3300A /* Do not touch */,
 				FFF797881F23DE5E00D3300A /* Supporting Files */,
 			);
 			path = CraftON.;
@@ -80,6 +99,15 @@
 				FFF797891F23DE5E00D3300A /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FFF797BD1F26A87B00D3300A /* Do not touch */ = {
+			isa = PBXGroup;
+			children = (
+				FFF797911F23DE5E00D3300A /* Main.storyboard */,
+				FFF797991F23DE5F00D3300A /* LaunchScreen.storyboard */,
+			);
+			name = "Do not touch";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -154,10 +182,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FFF797901F23DE5E00D3300A /* ViewController.m in Sources */,
+				FFF797BC1F26A6B600D3300A /* BeerCollectionViewCell.m in Sources */,
 				FFF797961F23DE5E00D3300A /* CraftON_.xcdatamodeld in Sources */,
 				FFF7978D1F23DE5E00D3300A /* AppDelegate.m in Sources */,
 				FFF7978A1F23DE5E00D3300A /* main.m in Sources */,
+				FFF797AD1F267E3C00D3300A /* SplashViewController.m in Sources */,
+				FFF797B01F267E4400D3300A /* MenuViewController.m in Sources */,
+				FFF797B31F267E5100D3300A /* DetailViewController.m in Sources */,
+				FFF797B61F267E5700D3300A /* MapViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -318,6 +350,7 @@
 				FFF797A11F23DE5F00D3300A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
