@@ -6,6 +6,9 @@ target 'CraftON.' do
   # use_frameworks!
 
   # Pods for CraftON.
+
 pod 'MAThemeKit', '~> 1.0'
+pod 'GoogleMaps'
+pod 'GooglePlaces'
 
 end

@@ -1,12 +1,23 @@
 PODS:
+  - GoogleMaps (2.3.1):
+    - GoogleMaps/Maps (= 2.3.1)
+  - GoogleMaps/Base (2.3.1)
+  - GoogleMaps/Maps (2.3.1):
+    - GoogleMaps/Base
+  - GooglePlaces (2.3.1):
+    - GoogleMaps/Base (= 2.3.1)
   - MAThemeKit (1.0)
 
 DEPENDENCIES:
+  - GoogleMaps
+  - GooglePlaces
   - MAThemeKit (~> 1.0)
 
 SPEC CHECKSUMS:
+  GoogleMaps: c66a71058b9b1294bcdd5463a68e357fa50c079f
+  GooglePlaces: 4a7b22debfa1af65017b82943431822607e45201
   MAThemeKit: 559acc98ceadc051cccb1b6bb0c4ca28475eb021
 
-PODFILE CHECKSUM: a23897994352934aee3835c914ccd1b8a5e83aaa
+PODFILE CHECKSUM: 03f377b0ca37cb57ccdca5d8bf9e18ffc62a890c
 
 COCOAPODS: 1.2.1

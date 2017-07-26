@@ -7,12 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		210A6600EE4FF0E29F7331C1FE2414BD /* MAThemeKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 02EB3A9D20C27C11069CF14868DB55BA /* MAThemeKit.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		210A6600EE4FF0E29F7331C1FE2414BD /* MAThemeKit.m in Sources */ = {isa = PBXBuildFile; fileRef = C3213E8F2CD02CFFFB649B463ADD3B7D /* MAThemeKit.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		58F4BC1E973F94ACCC52BD29DA5AB807 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 		7FAC9F6701D33F92E25503E3071CF3F5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 		8FAADFBA161CE0F5BAB5632F544F50BE /* Pods-CraftON.-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 68413FDDF64A20F1EB93416D396A0E91 /* Pods-CraftON.-dummy.m */; };
-		9BE5B8EB2F5BD92C5542CC116266AEF4 /* MAThemeKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 19CF8AAD4E5400C4858EC6BF2E432920 /* MAThemeKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A9D0A37CB207B04FC956CB1D4810F0B6 /* MAThemeKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F9F226768777648180B27D92585C44CC /* MAThemeKit-dummy.m */; };
+		9BE5B8EB2F5BD92C5542CC116266AEF4 /* MAThemeKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C7D138092D6B6E8CC2B22FC8B4E0A24 /* MAThemeKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A9D0A37CB207B04FC956CB1D4810F0B6 /* MAThemeKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C466DBC4EF48D3CBEE5290DB6070D17C /* MAThemeKit-dummy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,22 +26,28 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		02EB3A9D20C27C11069CF14868DB55BA /* MAThemeKit.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MAThemeKit.m; path = MAThemeKit/MAThemeKit.m; sourceTree = "<group>"; };
-		035EFCDEAC13185F28B3C1036E3167AD /* MAThemeKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MAThemeKit.xcconfig; sourceTree = "<group>"; };
+		0FA884CD4D51F6E77AEF734012E1352A /* MAThemeKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MAThemeKit-prefix.pch"; sourceTree = "<group>"; };
 		143FE2A48C51519C2EDCB5AD6491BA09 /* Pods-CraftON..release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CraftON..release.xcconfig"; sourceTree = "<group>"; };
-		19CF8AAD4E5400C4858EC6BF2E432920 /* MAThemeKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MAThemeKit.h; path = MAThemeKit/MAThemeKit.h; sourceTree = "<group>"; };
-		2EB80D8C138ED1C22B757C80C5055DAE /* MAThemeKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MAThemeKit-prefix.pch"; sourceTree = "<group>"; };
+		166BCA5D60042D53AE163FD8DC393002 /* GoogleMapsBase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMapsBase.framework; path = Base/Frameworks/GoogleMapsBase.framework; sourceTree = "<group>"; };
+		1B7FBBB8B3D891F9B30294A53EFA0E88 /* GooglePlaces.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GooglePlaces.framework; path = Frameworks/GooglePlaces.framework; sourceTree = "<group>"; };
+		274C726A960B1807E6125BE0E493E93D /* GoogleMapsCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMapsCore.framework; path = Maps/Frameworks/GoogleMapsCore.framework; sourceTree = "<group>"; };
 		42870F9435CEC0EB94A63A55D1F60203 /* Pods-CraftON..debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CraftON..debug.xcconfig"; sourceTree = "<group>"; };
+		4C7D138092D6B6E8CC2B22FC8B4E0A24 /* MAThemeKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MAThemeKit.h; path = MAThemeKit/MAThemeKit.h; sourceTree = "<group>"; };
 		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		68413FDDF64A20F1EB93416D396A0E91 /* Pods-CraftON.-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CraftON.-dummy.m"; sourceTree = "<group>"; };
 		6BD9CEEA2683C3EC59A936752A45406C /* Pods-CraftON.-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-CraftON.-acknowledgements.markdown"; sourceTree = "<group>"; };
+		753A749E6D4A1011D905A467E4B4D6C3 /* GoogleMaps.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = GoogleMaps.bundle; path = Maps/Frameworks/GoogleMaps.framework/Versions/A/Resources/GoogleMaps.bundle; sourceTree = "<group>"; };
 		8D6F8B694F399C98B52986198C225AAB /* Pods-CraftON.-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CraftON.-resources.sh"; sourceTree = "<group>"; };
 		91462E26F333F4012AE8CD42651D7DD4 /* libMAThemeKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libMAThemeKit.a; path = libMAThemeKit.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		AD0A71ED112EFF69D96B9E626E1D67A7 /* MAThemeKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MAThemeKit.xcconfig; sourceTree = "<group>"; };
+		ADE035ACC3F831E19FCC0468142E81B7 /* GooglePlaces.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = GooglePlaces.bundle; path = Frameworks/GooglePlaces.framework/Versions/A/Resources/GooglePlaces.bundle; sourceTree = "<group>"; };
 		BC407CE03B0178A64C1D32D5B9EC81BA /* Pods-CraftON.-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CraftON.-acknowledgements.plist"; sourceTree = "<group>"; };
 		C0842B1498001ACE3846D51CE8907E9F /* Pods-CraftON.-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CraftON.-frameworks.sh"; sourceTree = "<group>"; };
+		C3213E8F2CD02CFFFB649B463ADD3B7D /* MAThemeKit.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MAThemeKit.m; path = MAThemeKit/MAThemeKit.m; sourceTree = "<group>"; };
+		C466DBC4EF48D3CBEE5290DB6070D17C /* MAThemeKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MAThemeKit-dummy.m"; sourceTree = "<group>"; };
 		CD44651BB8176F114CA699D79A95DAC9 /* libPods-CraftON..a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-CraftON..a"; path = "libPods-CraftON..a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		F9F226768777648180B27D92585C44CC /* MAThemeKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MAThemeKit-dummy.m"; sourceTree = "<group>"; };
+		FA95A0EF135D6BA8341A67A3E9C155EF /* GoogleMaps.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMaps.framework; path = Maps/Frameworks/GoogleMaps.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,15 +70,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		3367BD46737E761824740F4B1EA984A2 /* MAThemeKit */ = {
+		2925E81245B39B21CDC2AB03197F742D /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				19CF8AAD4E5400C4858EC6BF2E432920 /* MAThemeKit.h */,
-				02EB3A9D20C27C11069CF14868DB55BA /* MAThemeKit.m */,
-				AC0C01ABB27DA1EFF2C0E35C2F65D93C /* Support Files */,
+				753A749E6D4A1011D905A467E4B4D6C3 /* GoogleMaps.bundle */,
 			);
-			name = MAThemeKit;
-			path = MAThemeKit;
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		3E05839D7C78E173B54C84BEC9B41E42 /* GooglePlaces */ = {
+			isa = PBXGroup;
+			children = (
+				DF52C3A3373EB886EA532F087C01EE7D /* Frameworks */,
+				73FB5D42434705CEB942EB20B02BC919 /* Resources */,
+			);
+			name = GooglePlaces;
+			path = GooglePlaces;
 			sourceTree = "<group>";
 		};
 		41126D09191CDF1BC3305322A1E1FC4A /* Targets Support Files */ = {
@@ -98,26 +111,73 @@
 			path = "Target Support Files/Pods-CraftON.";
 			sourceTree = "<group>";
 		};
+		42C326C935425E12FD00F9E138E0608C /* Maps */ = {
+			isa = PBXGroup;
+			children = (
+				4D6F1C5DD0B6CF7D6A342ACEAF5B6D74 /* Frameworks */,
+				2925E81245B39B21CDC2AB03197F742D /* Resources */,
+			);
+			name = Maps;
+			sourceTree = "<group>";
+		};
+		4D6F1C5DD0B6CF7D6A342ACEAF5B6D74 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FA95A0EF135D6BA8341A67A3E9C155EF /* GoogleMaps.framework */,
+				274C726A960B1807E6125BE0E493E93D /* GoogleMapsCore.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		654F38D78FCA8E36AFF2AF0810172FED /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				AD0A71ED112EFF69D96B9E626E1D67A7 /* MAThemeKit.xcconfig */,
+				C466DBC4EF48D3CBEE5290DB6070D17C /* MAThemeKit-dummy.m */,
+				0FA884CD4D51F6E77AEF734012E1352A /* MAThemeKit-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/MAThemeKit";
+			sourceTree = "<group>";
+		};
+		67527B00B8C4DF4B751CF224EE30FBED /* GoogleMaps */ = {
+			isa = PBXGroup;
+			children = (
+				DA04C1C04C1F63037351EA2978B3E775 /* Base */,
+				42C326C935425E12FD00F9E138E0608C /* Maps */,
+			);
+			name = GoogleMaps;
+			path = GoogleMaps;
+			sourceTree = "<group>";
+		};
+		73FB5D42434705CEB942EB20B02BC919 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				ADE035ACC3F831E19FCC0468142E81B7 /* GooglePlaces.bundle */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		79D1F844637C3DBFFD5843D64CFEB005 /* MAThemeKit */ = {
+			isa = PBXGroup;
+			children = (
+				4C7D138092D6B6E8CC2B22FC8B4E0A24 /* MAThemeKit.h */,
+				C3213E8F2CD02CFFFB649B463ADD3B7D /* MAThemeKit.m */,
+				654F38D78FCA8E36AFF2AF0810172FED /* Support Files */,
+			);
+			name = MAThemeKit;
+			path = MAThemeKit;
+			sourceTree = "<group>";
+		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				FA224DFE94B182A292798131C51A341A /* Pods */,
+				CAFC4CB1F15827DAB35B339D18CBF675 /* Pods */,
 				E66406820485530152849EE6F52B1ECE /* Products */,
 				41126D09191CDF1BC3305322A1E1FC4A /* Targets Support Files */,
 			);
-			sourceTree = "<group>";
-		};
-		AC0C01ABB27DA1EFF2C0E35C2F65D93C /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				035EFCDEAC13185F28B3C1036E3167AD /* MAThemeKit.xcconfig */,
-				F9F226768777648180B27D92585C44CC /* MAThemeKit-dummy.m */,
-				2EB80D8C138ED1C22B757C80C5055DAE /* MAThemeKit-prefix.pch */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/MAThemeKit";
 			sourceTree = "<group>";
 		};
 		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
@@ -128,12 +188,38 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		CAFC4CB1F15827DAB35B339D18CBF675 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				67527B00B8C4DF4B751CF224EE30FBED /* GoogleMaps */,
+				3E05839D7C78E173B54C84BEC9B41E42 /* GooglePlaces */,
+				79D1F844637C3DBFFD5843D64CFEB005 /* MAThemeKit */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
 			isa = PBXGroup;
 			children = (
 				6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */,
 			);
 			name = iOS;
+			sourceTree = "<group>";
+		};
+		DA04C1C04C1F63037351EA2978B3E775 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				F599E8D3CFAB67304CD55063A8FD5D2D /* Frameworks */,
+			);
+			name = Base;
+			sourceTree = "<group>";
+		};
+		DF52C3A3373EB886EA532F087C01EE7D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1B7FBBB8B3D891F9B30294A53EFA0E88 /* GooglePlaces.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		E66406820485530152849EE6F52B1ECE /* Products */ = {
@@ -145,12 +231,12 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		FA224DFE94B182A292798131C51A341A /* Pods */ = {
+		F599E8D3CFAB67304CD55063A8FD5D2D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				3367BD46737E761824740F4B1EA984A2 /* MAThemeKit */,
+				166BCA5D60042D53AE163FD8DC393002 /* GoogleMapsBase.framework */,
 			);
-			name = Pods;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -331,7 +417,7 @@
 		};
 		496175AE4C596B50B81A4910EC218EA5 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 035EFCDEAC13185F28B3C1036E3167AD /* MAThemeKit.xcconfig */;
+			baseConfigurationReference = AD0A71ED112EFF69D96B9E626E1D67A7 /* MAThemeKit.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -421,7 +507,7 @@
 		};
 		831C03F64793E6815AAC38BE98034B0A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 035EFCDEAC13185F28B3C1036E3167AD /* MAThemeKit.xcconfig */;
+			baseConfigurationReference = AD0A71ED112EFF69D96B9E626E1D67A7 /* MAThemeKit.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
