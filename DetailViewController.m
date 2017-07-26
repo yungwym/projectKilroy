@@ -22,11 +22,22 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    [self configureBeer];
     
-    self.title = @""; //name
+    self.title = self.myBeer.beerName; //name
 }
 
+- (void)configureBeer
+{
+    //float ABVpercent = self.myBeer.beerABV.floatValue / 100;
+    //float ABVpercent = ABVfloat/100;
+    //NSString *ABVString = [self.myBeer.beerABV stringValue];
+    
+    self.detailCraftImageView.image = self.myBeer.beerImage;
+    self.abvLabel.text = [NSString stringWithFormat:@"Hello %@", self.myBeer.beerABV];
+    self.brewerLabel.text = self.myBeer.beerProducer;
+    self.descriptionLabel.text = self.myBeer.beerTag;
+}
 
 - (IBAction)mapTapped:(UIButton *)sender {
     

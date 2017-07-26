@@ -9,5 +9,6 @@
 #ifndef Key_h
 #define Key_h
 
+#define LCBO_APIKEY @"MDoyODFhM2EyMi02ZWViLTExZTctOTNkMy0wMzdiZWVmMDBjZDE6UVhqeUNVUDVOQXgwTVhCeGFSbThwUVJEUWFNUFJhNGhrZ2lq"
 
 #endif /* Key_h */

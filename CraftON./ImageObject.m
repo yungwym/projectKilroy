@@ -10,4 +10,14 @@
 
 @implementation ImageObject
 
+- (instancetype)initWithImage:(UIImage *)image
+{
+    self = [super init];
+    if (self) {
+        
+        _defaultImage = image;
+        
+    }
+    return self;
+}
 @end

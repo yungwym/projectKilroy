@@ -8,8 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
+@class Beer;
+
 @interface BeerCollectionViewCell : UICollectionViewCell
 
 @property (weak, nonatomic) IBOutlet UIImageView *beerImageView; //image_thumb
+@property (strong, nonatomic) Beer *beer;
 
 @end

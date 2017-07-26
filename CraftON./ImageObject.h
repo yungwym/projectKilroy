@@ -7,7 +7,12 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 @interface ImageObject : NSObject
+
+@property (strong, nonatomic) UIImage *defaultImage;
+
+- (instancetype) initWithImage:(UIImage*) image;
 
 @end
