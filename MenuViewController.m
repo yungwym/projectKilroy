@@ -40,8 +40,6 @@
     return cell;
 }
 
-
-
 - (IBAction)segmentTapped:(UISegmentedControl *)sender {
     
     
