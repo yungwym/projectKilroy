@@ -54,7 +54,7 @@
                                               
                                              
                                               
-                                              [self performSelector:@selector(showMenu) withObject:nil afterDelay:0.4];
+                                              [self performSelector:@selector(showMenu) withObject:nil afterDelay:0.6];
                                               
                                                
                                           }];

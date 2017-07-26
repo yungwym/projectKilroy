@@ -151,10 +151,14 @@
                                         </constraints>
                                         <connections>
                                             <outlet property="beerImageView" destination="jD2-qo-K02" id="DsZ-FU-Yzh"/>
-                                            <segue destination="8vN-Af-HlA" kind="show" id="zkZ-yJ-EvQ"/>
+                                            <segue destination="8vN-Af-HlA" kind="show" identifier="detail" id="zkZ-yJ-EvQ"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="e5p-Kc-gBO" id="gal-2V-s6M"/>
+                                    <outlet property="delegate" destination="e5p-Kc-gBO" id="hpx-oX-XfD"/>
+                                </connections>
                             </collectionView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -238,7 +242,7 @@
                                 <state key="normal" title="Find Me!"/>
                                 <connections>
                                     <action selector="mapTapped:" destination="8vN-Af-HlA" eventType="touchUpInside" id="QtJ-ls-5BN"/>
-                                    <segue destination="OmI-Hh-AtJ" kind="show" id="KTt-4i-w7h"/>
+                                    <segue destination="OmI-Hh-AtJ" kind="show" identifier="map" id="KTt-4i-w7h"/>
                                 </connections>
                             </button>
                         </subviews>

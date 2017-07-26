@@ -78,7 +78,7 @@
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
-    if ([segue.identifier isEqualToString:@"DetailViewController"])
+    if ([segue.identifier isEqualToString:@"detail"])
     {
         NSIndexPath *indexPath = [self.collectionView indexPathForCell:sender];
         Beer *beer = self.beers[indexPath.row];
