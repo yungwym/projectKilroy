@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Beer.h"
 
 @interface DetailViewController : UIViewController
+
+@property (strong, nonatomic) Beer *myBeer;
 
 @end

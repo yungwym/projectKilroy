@@ -7,7 +7,15 @@
 //
 
 #import "BeerCollectionViewCell.h"
+#import "ImageObject.h"
+#import "Beer.h"
 
 @implementation BeerCollectionViewCell
+
+- (void)setBeer:(Beer *)beer
+{
+    _beer = beer;
+    self.beerImageView.image = _beer.beerImage;
+}
 
 @end
