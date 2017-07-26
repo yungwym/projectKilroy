@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		160EA6C67B35ACC0DB84D8EA /* libPods-CraftON..a in Frameworks */ = {isa = PBXBuildFile; fileRef = BA6D26E1A4C20C97DB6A8D42 /* libPods-CraftON..a */; };
+		FF772A6F1F291709002F7D76 /* Store.m in Sources */ = {isa = PBXBuildFile; fileRef = FF772A6E1F291709002F7D76 /* Store.m */; };
+		FF772A731F2917DC002F7D76 /* NetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FF772A721F2917DC002F7D76 /* NetworkManager.m */; };
+		FF772A761F2917E5002F7D76 /* ImageObject.m in Sources */ = {isa = PBXBuildFile; fileRef = FF772A751F2917E5002F7D76 /* ImageObject.m */; };
+		FF772A791F2917ED002F7D76 /* Beer.m in Sources */ = {isa = PBXBuildFile; fileRef = FF772A781F2917ED002F7D76 /* Beer.m */; };
 		FFF7978A1F23DE5E00D3300A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FFF797891F23DE5E00D3300A /* main.m */; };
 		FFF7978D1F23DE5E00D3300A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FFF7978C1F23DE5E00D3300A /* AppDelegate.m */; };
 		FFF797931F23DE5E00D3300A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFF797911F23DE5E00D3300A /* Main.storyboard */; };
@@ -25,6 +29,15 @@
 		1627A04BADE8AAE78CE8B9E2 /* Pods-CraftON..release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CraftON..release.xcconfig"; path = "Pods/Target Support Files/Pods-CraftON./Pods-CraftON..release.xcconfig"; sourceTree = "<group>"; };
 		BA6D26E1A4C20C97DB6A8D42 /* libPods-CraftON..a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CraftON..a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1C53BC2D593996D2541D659 /* Pods-CraftON..debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CraftON..debug.xcconfig"; path = "Pods/Target Support Files/Pods-CraftON./Pods-CraftON..debug.xcconfig"; sourceTree = "<group>"; };
+		FF772A6D1F291709002F7D76 /* Store.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Store.h; path = ../Store.h; sourceTree = "<group>"; };
+		FF772A6E1F291709002F7D76 /* Store.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Store.m; path = ../Store.m; sourceTree = "<group>"; };
+		FF772A701F2917CD002F7D76 /* Key.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Key.h; sourceTree = "<group>"; };
+		FF772A711F2917DC002F7D76 /* NetworkManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkManager.h; sourceTree = "<group>"; };
+		FF772A721F2917DC002F7D76 /* NetworkManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkManager.m; sourceTree = "<group>"; };
+		FF772A741F2917E5002F7D76 /* ImageObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageObject.h; sourceTree = "<group>"; };
+		FF772A751F2917E5002F7D76 /* ImageObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageObject.m; sourceTree = "<group>"; };
+		FF772A771F2917ED002F7D76 /* Beer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Beer.h; sourceTree = "<group>"; };
+		FF772A781F2917ED002F7D76 /* Beer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Beer.m; sourceTree = "<group>"; };
 		FFF797851F23DE5E00D3300A /* CraftON..app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CraftON..app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFF797891F23DE5E00D3300A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		FFF7978B1F23DE5E00D3300A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -75,6 +88,47 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		FF772A7A1F291926002F7D76 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FF772A701F2917CD002F7D76 /* Key.h */,
+				FF772A711F2917DC002F7D76 /* NetworkManager.h */,
+				FF772A721F2917DC002F7D76 /* NetworkManager.m */,
+				FF772A741F2917E5002F7D76 /* ImageObject.h */,
+				FF772A751F2917E5002F7D76 /* ImageObject.m */,
+				FF772A771F2917ED002F7D76 /* Beer.h */,
+				FF772A781F2917ED002F7D76 /* Beer.m */,
+				FF772A6D1F291709002F7D76 /* Store.h */,
+				FF772A6E1F291709002F7D76 /* Store.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		FF772A7B1F291933002F7D76 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FFF797AB1F267E3C00D3300A /* SplashViewController.h */,
+				FFF797AC1F267E3C00D3300A /* SplashViewController.m */,
+				FFF797BD1F26A87B00D3300A /* Do not touch */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		FF772A7C1F29193A002F7D76 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FFF797AE1F267E4400D3300A /* MenuViewController.h */,
+				FFF797AF1F267E4400D3300A /* MenuViewController.m */,
+				FFF797B11F267E5100D3300A /* DetailViewController.h */,
+				FFF797B21F267E5100D3300A /* DetailViewController.m */,
+				FFF797BA1F26A6B600D3300A /* BeerCollectionViewCell.h */,
+				FFF797BB1F26A6B600D3300A /* BeerCollectionViewCell.m */,
+				FFF797B41F267E5700D3300A /* MapViewController.h */,
+				FFF797B51F267E5700D3300A /* MapViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
 		FFF7977C1F23DE5E00D3300A = {
 			isa = PBXGroup;
 			children = (
@@ -98,20 +152,12 @@
 			children = (
 				FFF7978B1F23DE5E00D3300A /* AppDelegate.h */,
 				FFF7978C1F23DE5E00D3300A /* AppDelegate.m */,
-				FFF797AB1F267E3C00D3300A /* SplashViewController.h */,
-				FFF797AC1F267E3C00D3300A /* SplashViewController.m */,
-				FFF797AE1F267E4400D3300A /* MenuViewController.h */,
-				FFF797AF1F267E4400D3300A /* MenuViewController.m */,
-				FFF797B11F267E5100D3300A /* DetailViewController.h */,
-				FFF797B21F267E5100D3300A /* DetailViewController.m */,
-				FFF797B41F267E5700D3300A /* MapViewController.h */,
-				FFF797B51F267E5700D3300A /* MapViewController.m */,
-				FFF797BA1F26A6B600D3300A /* BeerCollectionViewCell.h */,
-				FFF797BB1F26A6B600D3300A /* BeerCollectionViewCell.m */,
+				FF772A7A1F291926002F7D76 /* Model */,
+				FF772A7B1F291933002F7D76 /* View */,
+				FF772A7C1F29193A002F7D76 /* Controller */,
 				FFF797971F23DE5F00D3300A /* Assets.xcassets */,
 				FFF7979C1F23DE5F00D3300A /* Info.plist */,
 				FFF797941F23DE5E00D3300A /* CraftON_.xcdatamodeld */,
-				FFF797BD1F26A87B00D3300A /* Do not touch */,
 				FFF797881F23DE5E00D3300A /* Supporting Files */,
 			);
 			path = CraftON.;
@@ -257,9 +303,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF772A791F2917ED002F7D76 /* Beer.m in Sources */,
 				FFF797BC1F26A6B600D3300A /* BeerCollectionViewCell.m in Sources */,
 				FFF797961F23DE5E00D3300A /* CraftON_.xcdatamodeld in Sources */,
 				FFF7978D1F23DE5E00D3300A /* AppDelegate.m in Sources */,
+				FF772A731F2917DC002F7D76 /* NetworkManager.m in Sources */,
+				FF772A6F1F291709002F7D76 /* Store.m in Sources */,
+				FF772A761F2917E5002F7D76 /* ImageObject.m in Sources */,
 				FFF7978A1F23DE5E00D3300A /* main.m in Sources */,
 				FFF797AD1F267E3C00D3300A /* SplashViewController.m in Sources */,
 				FFF797B01F267E4400D3300A /* MenuViewController.m in Sources */,
