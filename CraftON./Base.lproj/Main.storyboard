@@ -22,13 +22,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Craft ON." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FqL-eK-YcL">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Beer Me!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FqL-eK-YcL">
                                 <rect key="frame" x="85" y="100" width="150" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="ALb-MM-csb"/>
                                     <constraint firstAttribute="width" constant="150" id="hbC-OT-jFy"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="29"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="31"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -42,30 +42,59 @@
                                 </state>
                                 <connections>
                                     <action selector="pintTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9LX-9q-PnH"/>
-                                    <segue destination="cdM-be-9U2" kind="show" id="QfF-Km-ehm"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Pint Logo" translatesAutoresizingMaskIntoConstraints="NO" id="qZa-l4-jdC">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Pint Logo Copy" translatesAutoresizingMaskIntoConstraints="NO" id="qZa-l4-jdC">
                                 <rect key="frame" x="68" y="204" width="185" height="310"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Beer Copy" translatesAutoresizingMaskIntoConstraints="NO" id="uDb-Cv-7lm">
+                                <rect key="frame" x="69" y="252" width="182" height="252"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Bubble 1" translatesAutoresizingMaskIntoConstraints="NO" id="tux-N0-TRm" userLabel="Bubble 2">
+                                <rect key="frame" x="104" y="270" width="131" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Bubble 2" translatesAutoresizingMaskIntoConstraints="NO" id="kQg-h1-bIX">
+                                <rect key="frame" x="84" y="263" width="62" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Bubble 2" translatesAutoresizingMaskIntoConstraints="NO" id="rbd-aK-YDm" userLabel="Bubble 3">
+                                <rect key="frame" x="178" y="258" width="62" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Bubble 2" translatesAutoresizingMaskIntoConstraints="NO" id="idc-wc-yTe" userLabel="Bubble 4">
+                                <rect key="frame" x="141" y="282" width="45" height="26"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="BlueCover" translatesAutoresizingMaskIntoConstraints="NO" id="Z7p-60-Ac0">
+                                <rect key="frame" x="72" y="250" width="177" height="257"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
-                        <color key="backgroundColor" red="0.19607843137254902" green="0.2196078431372549" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.20784313725490194" green="0.22745098039215686" blue="0.32156862745098036" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="FqL-eK-YcL" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="80" id="RNB-qc-2zS"/>
                             <constraint firstItem="FqL-eK-YcL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ynU-cL-Wvn"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="blueCoverImageView" destination="Z7p-60-Ac0" id="Eqj-NO-3CJ"/>
+                        <outlet property="bubble1ImageView" destination="kQg-h1-bIX" id="lSL-th-lZc"/>
+                        <outlet property="bubble2ImageView" destination="tux-N0-TRm" id="Gja-CH-wSg"/>
+                        <outlet property="bubble3ImageView" destination="rbd-aK-YDm" id="lPV-zg-Iae"/>
+                        <outlet property="bubble4ImageView" destination="idc-wc-yTe" id="L7D-3v-Dzy"/>
                         <outlet property="pintImageView" destination="qZa-l4-jdC" id="lj2-Nl-qOj"/>
                         <outlet property="titleLabel" destination="FqL-eK-YcL" id="6hX-ze-7Yc"/>
+                        <segue destination="cdM-be-9U2" kind="show" identifier="enter" id="P5S-FL-wx9"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1055.625" y="123.59154929577466"/>
         </scene>
-        <!--Craft ON. -->
+        <!--Beer Me!-->
         <scene sceneID="5hg-vE-jZY">
             <objects>
                 <viewController id="e5p-Kc-gBO" customClass="MenuViewController" sceneMemberID="viewController">
@@ -86,6 +115,7 @@
                                     <segment title="Craft"/>
                                     <segment title="Lager"/>
                                     <segment title="Ale"/>
+                                    <segment title="Cider"/>
                                 </segments>
                                 <connections>
                                     <action selector="segmentTapped:" destination="e5p-Kc-gBO" eventType="valueChanged" id="bYm-g3-3DR"/>
@@ -137,7 +167,7 @@
                             <constraint firstItem="4WO-pN-wmq" firstAttribute="top" secondItem="VUT-5u-CxU" secondAttribute="bottom" constant="8" id="qAP-TE-d9V"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Craft ON. " id="TWR-E1-SsG"/>
+                    <navigationItem key="navigationItem" title="Beer Me!" id="TWR-E1-SsG"/>
                     <connections>
                         <outlet property="collectionView" destination="Q2I-N4-z5B" id="hIw-KM-EJc"/>
                         <outlet property="segmentControl" destination="4WO-pN-wmq" id="DxH-SC-mhq"/>
@@ -251,19 +281,7 @@
                     <view key="view" contentMode="scaleToFill" id="QYR-v7-6Ky">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="GsX-fI-6MH">
-                                <rect key="frame" x="0.0" y="64" width="320" height="504"/>
-                            </mapView>
-                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="GsX-fI-6MH" firstAttribute="leading" secondItem="QYR-v7-6Ky" secondAttribute="leading" id="Oi6-bm-u0o"/>
-                            <constraint firstItem="GsX-fI-6MH" firstAttribute="top" secondItem="emn-dy-qd0" secondAttribute="bottom" id="UaK-gF-1rm"/>
-                            <constraint firstAttribute="trailing" secondItem="GsX-fI-6MH" secondAttribute="trailing" id="h2S-go-j9q"/>
-                            <constraint firstItem="3BZ-Kn-em3" firstAttribute="top" secondItem="GsX-fI-6MH" secondAttribute="bottom" id="sqN-tK-cUh"/>
-                            <constraint firstItem="GsX-fI-6MH" firstAttribute="centerX" secondItem="QYR-v7-6Ky" secondAttribute="centerX" id="yMD-sG-vTr"/>
-                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Map View" id="LeV-Jx-JN9"/>
                 </viewController>
@@ -291,7 +309,11 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Beer Copy" width="164" height="213"/>
+        <image name="BlueCover" width="164" height="213"/>
+        <image name="Bubble 1" width="127" height="17"/>
+        <image name="Bubble 2" width="118" height="29"/>
         <image name="LostSirius" width="239" height="319"/>
-        <image name="Pint Logo" width="167" height="264"/>
+        <image name="Pint Logo Copy" width="168" height="272"/>
     </resources>
 </document>
