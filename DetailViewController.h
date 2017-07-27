@@ -8,11 +8,9 @@
 
 #import <UIKit/UIKit.h>
 #import "Beer.h"
-#import "NetworkManager.h"
 
 @interface DetailViewController : UIViewController
 
 @property (strong, nonatomic) Beer *myBeer;
-@property (strong, nonatomic) NetworkManager *networkManager;
 
 @end

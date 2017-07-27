@@ -37,7 +37,7 @@
     [super viewDidLoad];
     
     self.networkManager = [NetworkManager new];
-    [self.networkManager performRequest:@"products?q=beer+ale&per_page=50&page=1" completionHandler:^(NSArray *beers)
+    [self.networkManager performRequest:@"beer+ale&per_page=50&page=1" completionHandler:^(NSArray *beers)
      {
          self.beers = beers;
      }];

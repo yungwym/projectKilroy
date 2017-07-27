@@ -9,11 +9,13 @@
 #import "MapViewController.h"
 #import <GoogleMaps/GoogleMaps.h>
 #import <CoreLocation/CoreLocation.h>
+#import "NetworkManager.h"
 #import "Store.h"
 #import "Beer.h"
 
 @interface MapViewController () <CLLocationManagerDelegate>
 
+@property (strong, nonatomic) NetworkManager *networkManager;
 @property (nonatomic) GMSMapView *mapView;
 @property (nonatomic) CLLocationManager *locationManager;
 
@@ -23,6 +25,13 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    self.networkManager = [NetworkManager new];
+    [self.networkManager performStoreRequest:[NSString stringWithFormat:@"907147"] completionHandler:^(NSArray *stores)
+     {
+         self.stores = stores;
+     }];
+    
     self.locationManager = [[CLLocationManager alloc]init];
     self.locationManager.delegate = self;
     self.locationManager.desiredAccuracy = kCLLocationAccuracyBest;

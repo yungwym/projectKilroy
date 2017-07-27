@@ -15,5 +15,6 @@
 
 - (void)performRequest:(NSString*)query completionHandler:(void (^)(NSArray*))complete;
 - (void)fetchImageAtURL:(NSURL*)url handler:(void (^)(UIImage *image))handler;
+- (void)performStoreRequest:(NSString*)query completionHandler:(void (^)(NSArray*))complete;
 
 @end

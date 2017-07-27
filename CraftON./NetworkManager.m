@@ -10,6 +10,7 @@
 #import "Key.h"
 #import "BeerCollectionViewCell.h"
 #import "Beer.h"
+#import "Store.h"
 
 
 @implementation NetworkManager
@@ -22,7 +23,7 @@
 
 - (void)performRequest:(NSString*)query completionHandler:(void (^)(NSArray*))complete
 {
-    NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"https://lcboapi.com/%@&access_key=%@", query, LCBO_APIKEY]];
+    NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"https://lcboapi.com/products?q=%@&access_key=%@", query, LCBO_APIKEY]];
     NSURLRequest *urlRequest = [[NSURLRequest alloc]initWithURL:url];
     
     NSURLSessionConfiguration *configuration = [NSURLSessionConfiguration defaultSessionConfiguration];
@@ -108,5 +109,67 @@
     }];
     [downloadTask resume];
 }
+
+- (void)performStoreRequest:(NSString*)query completionHandler:(void (^)(NSArray*))complete
+{
+    NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"https://lcboapi.com/stores?product_id=%@&access_key=%@", query, LCBO_APIKEY]];
+    NSURLRequest *urlRequest = [[NSURLRequest alloc]initWithURL:url];
+    
+    NSURLSessionConfiguration *configuration = [NSURLSessionConfiguration defaultSessionConfiguration];
+    NSURLSession *session = [NSURLSession sessionWithConfiguration:configuration];
+    
+    NSURLSessionDataTask *dataTask = [session dataTaskWithRequest:urlRequest
+                                                completionHandler:^(NSData* _Nullable data, NSURLResponse* _Nullable response, NSError* _Nullable error)
+                                      {
+                                          if (error)
+                                          {
+                                              NSLog(@"error: %@", error.localizedDescription);
+                                              return;
+                                          }
+                                          
+                                          NSError *jsonError = nil;
+                                          NSDictionary *dictJSON  = [NSJSONSerialization JSONObjectWithData:data
+                                                                                                    options:0
+                                                                                                      error:&jsonError];
+                                          if (jsonError)
+                                          {
+                                              NSLog(@"jsonError: %@", jsonError.localizedDescription);
+                                              return;
+                                          }
+                                          
+                                          complete([self convertJSONToStores:dictJSON]);
+                                          
+                                      }];
+    [dataTask resume];
+}
+
+- (NSArray*)convertJSONToStores:(NSDictionary*)json
+{
+    NSArray *storesArray = json[@"result"];
+    NSMutableArray *result = [[NSMutableArray alloc]initWithCapacity:storesArray.count];
+    
+    for (NSDictionary *myStore in storesArray)
+    {
+        NSNumber *storeID = [myStore valueForKey:@"id"];
+        NSString *storeName = [myStore valueForKey:@"name"];
+        NSString *storeTags = [myStore valueForKey:@"tags"];
+        NSString *storeAddress1 = [myStore valueForKey:@"address_line_1"];
+        NSString *storeAddress2 = [myStore valueForKey:@"address_line_2"];
+        NSString *storeCity = [myStore valueForKey:@"city"];
+        NSString *storePostalCode = [myStore valueForKey:@"postal_code"];
+        NSNumber *latitudeNumber = [myStore valueForKey:@"latitude"];
+        NSNumber *longitudeNumber = [myStore valueForKey:@"longitude"];
+        
+        float latitude = latitudeNumber.floatValue;
+        float longitude = longitudeNumber.floatValue;
+        NSLog(@"latitude: %f & longitude: %f", latitude, longitude);
+        
+        Store *store = [[Store alloc]initWithID:storeID andName:storeName andTags:storeTags andAddress1:storeAddress1 andAdress2:storeAddress2 andCity:storeCity andPostalCode:storePostalCode andLatitude:latitudeNumber andLongitude:latitudeNumber];
+        
+        [result addObject:store];
+    }
+    return result;
+}
+
 
 @end
