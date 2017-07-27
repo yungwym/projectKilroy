@@ -12,6 +12,7 @@
 		FF772A731F2917DC002F7D76 /* NetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FF772A721F2917DC002F7D76 /* NetworkManager.m */; };
 		FF772A761F2917E5002F7D76 /* ImageObject.m in Sources */ = {isa = PBXBuildFile; fileRef = FF772A751F2917E5002F7D76 /* ImageObject.m */; };
 		FF772A791F2917ED002F7D76 /* Beer.m in Sources */ = {isa = PBXBuildFile; fileRef = FF772A781F2917ED002F7D76 /* Beer.m */; };
+		FF88409E1F2A306200A243AC /* PhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF88409D1F2A306200A243AC /* PhotoViewController.m */; };
 		FFF7978A1F23DE5E00D3300A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FFF797891F23DE5E00D3300A /* main.m */; };
 		FFF7978D1F23DE5E00D3300A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FFF7978C1F23DE5E00D3300A /* AppDelegate.m */; };
 		FFF797931F23DE5E00D3300A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFF797911F23DE5E00D3300A /* Main.storyboard */; };
@@ -38,6 +39,8 @@
 		FF772A751F2917E5002F7D76 /* ImageObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageObject.m; sourceTree = "<group>"; };
 		FF772A771F2917ED002F7D76 /* Beer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Beer.h; sourceTree = "<group>"; };
 		FF772A781F2917ED002F7D76 /* Beer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Beer.m; sourceTree = "<group>"; };
+		FF88409C1F2A306200A243AC /* PhotoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoViewController.h; sourceTree = "<group>"; };
+		FF88409D1F2A306200A243AC /* PhotoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoViewController.m; sourceTree = "<group>"; };
 		FFF797851F23DE5E00D3300A /* CraftON..app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CraftON..app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFF797891F23DE5E00D3300A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		FFF7978B1F23DE5E00D3300A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -109,6 +112,8 @@
 			children = (
 				FFF797AB1F267E3C00D3300A /* SplashViewController.h */,
 				FFF797AC1F267E3C00D3300A /* SplashViewController.m */,
+				FF88409C1F2A306200A243AC /* PhotoViewController.h */,
+				FF88409D1F2A306200A243AC /* PhotoViewController.m */,
 				FFF797BD1F26A87B00D3300A /* Do not touch */,
 			);
 			name = View;
@@ -310,6 +315,7 @@
 				FF772A731F2917DC002F7D76 /* NetworkManager.m in Sources */,
 				FF772A6F1F291709002F7D76 /* Store.m in Sources */,
 				FF772A761F2917E5002F7D76 /* ImageObject.m in Sources */,
+				FF88409E1F2A306200A243AC /* PhotoViewController.m in Sources */,
 				FFF7978A1F23DE5E00D3300A /* main.m in Sources */,
 				FFF797AD1F267E3C00D3300A /* SplashViewController.m in Sources */,
 				FFF797B01F267E4400D3300A /* MenuViewController.m in Sources */,
