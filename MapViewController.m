@@ -10,14 +10,13 @@
 #import <GoogleMaps/GoogleMaps.h>
 #import <CoreLocation/CoreLocation.h>
 #import "NetworkManager.h"
-#import "Store.h"
 #import "Beer.h"
 
 @interface MapViewController () <CLLocationManagerDelegate>
 
 @property (strong, nonatomic) NetworkManager *networkManager;
 @property (nonatomic) GMSMapView *mapView;
-@property (nonatomic) CLLocationManager *locationManager;
+@property (strong, nonatomic) CLLocationManager *locationManager;
 
 @end
 
@@ -78,7 +77,9 @@
         
     }
     
-    //Testing
+    /*
+     
+     //Testing
     
     GMSCameraPosition *camera = [GMSCameraPosition cameraWithLatitude:43.6453
                                                             longitude:-79.3946
@@ -96,10 +97,10 @@
     marker.snippet = @"Toronto";
     marker.map = self.mapView;
     
+    */
     
     
     
-    /*
     int latitude = [currentClosestLocation.latitude intValue];
     int longitude = [currentClosestLocation.longitude intValue];
     NSString *name = currentClosestLocation.storeName;
@@ -119,8 +120,7 @@
     marker.position = CLLocationCoordinate2DMake(latitude, longitude);
     marker.title = name;
     marker.snippet = city;
-    marker.map = mapView;*/
-    
+    marker.map = mapView;    
     
 
     
