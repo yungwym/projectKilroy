@@ -8,12 +8,14 @@
 
 #import "MapViewController.h"
 #import <GoogleMaps/GoogleMaps.h>
+#import <CoreLocation/CoreLocation.h>
 #import "Store.h"
+#import "Beer.h"
 
 @interface MapViewController () <CLLocationManagerDelegate>
+
 @property (nonatomic) GMSMapView *mapView;
 @property (nonatomic) CLLocationManager *locationManager;
-@property (nonatomic) NSArray <Store*> *stores;
 
 @end
 
@@ -37,7 +39,7 @@
     CLLocation *currentUserLocation = [[CLLocation alloc]initWithLatitude:10.0 longitude:10.0];
     
     // query results
-    NSArray<Store*> *locationsFromQuery = self.stores;
+    NSArray<Store*>*locationsFromQuery = self.stores;
     
     if (locationsFromQuery.count < 1) {
         // alert the user that this isn't available anywhere
@@ -71,8 +73,8 @@
     
     int latitude = [currentClosestLocation.latitude intValue];
     int longitude = [currentClosestLocation.longitude intValue];
-    NSString *name = currentClosestLocation.name;
-    NSString *city = currentClosestLocation.city;
+    NSString *name = currentClosestLocation.storeName;
+    NSString *city = currentClosestLocation.storeCity;
     
     
     GMSCameraPosition *camera = [GMSCameraPosition cameraWithLatitude:latitude

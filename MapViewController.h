@@ -8,6 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
+@class Store;
+@class Beer;
+
 @interface MapViewController : UIViewController
+
+@property (strong, nonatomic) Beer *beer;
+@property (strong, nonatomic) NSArray *stores;
 
 @end

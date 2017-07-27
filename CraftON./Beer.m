@@ -10,7 +10,7 @@
 
 @implementation Beer
 
-- (instancetype)initWithID:(NSString *)beerID andName:(NSString *)beerName andImage:(UIImage*)beerImage andURL:(NSURL *)beerURL andABV:(NSNumber*)beerABV andTag:(NSString *)beerTag andSecondaryCategory:(NSString *)beerSecondaryCategory andTertiaryCategory:(NSString *)beerTertiaryCategory andProducer:(NSString *)beerProducer andOrigin:(NSString *)beerOrigin
+- (instancetype)initWithID:(NSNumber *)beerID andName:(NSString *)beerName andImage:(UIImage*)beerImage andURL:(NSURL *)beerURL andABV:(NSNumber*)beerABV andTag:(NSString *)beerTag andSecondaryCategory:(NSString *)beerSecondaryCategory andTertiaryCategory:(NSString *)beerTertiaryCategory andProducer:(NSString *)beerProducer andOrigin:(NSString *)beerOrigin
 {
     self = [super init];
     if (self) {

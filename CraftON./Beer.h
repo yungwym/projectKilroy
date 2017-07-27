@@ -11,7 +11,7 @@
 
 @interface Beer : NSObject
 
-@property (strong, nonatomic) NSString *beerID;
+@property (strong, nonatomic) NSNumber *beerID;
 @property (strong, nonatomic) NSString *beerName;
 @property (strong, nonatomic) UIImage *beerImage;
 @property (strong, nonatomic) NSURL *beerURL;
@@ -22,7 +22,7 @@
 @property (strong, nonatomic) NSString *beerProducer;
 @property (strong, nonatomic) NSString *beerOrigin;
 
-- (instancetype)initWithID:(NSString*)beerID andName:(NSString*)beerName andImage:(UIImage*)beerImage andURL:(NSURL*)beerURL andABV:(NSNumber*)beerABV andTag:(NSString*)beerTag andSecondaryCategory:(NSString*)beerSecondaryCategory andTertiaryCategory:(NSString*)beerTertiaryCategory andProducer:(NSString*)beerProducer andOrigin:(NSString*)beerOrigin;
+- (instancetype)initWithID:(NSNumber*)beerID andName:(NSString*)beerName andImage:(UIImage*)beerImage andURL:(NSURL*)beerURL andABV:(NSNumber*)beerABV andTag:(NSString*)beerTag andSecondaryCategory:(NSString*)beerSecondaryCategory andTertiaryCategory:(NSString*)beerTertiaryCategory andProducer:(NSString*)beerProducer andOrigin:(NSString*)beerOrigin;
 
 
 

@@ -22,7 +22,7 @@
 
 - (void)performRequest:(NSString*)query completionHandler:(void (^)(NSArray*))complete
 {
-    NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"https://lcboapi.com/products?q=%@&access_key=%@", query, LCBO_APIKEY]];
+    NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"https://lcboapi.com/%@&access_key=%@", query, LCBO_APIKEY]];
     NSURLRequest *urlRequest = [[NSURLRequest alloc]initWithURL:url];
     
     NSURLSessionConfiguration *configuration = [NSURLSessionConfiguration defaultSessionConfiguration];
@@ -57,13 +57,13 @@
 {
     NSArray *beersArray = json[@"result"];
     
-    NSMutableArray *result = [[NSMutableArray alloc]init];
-    //NSMutableArray *result = [[NSMutableArray alloc]initWithCapacity:beersArray.count];
+    //NSMutableArray *result = [[NSMutableArray alloc]init];
+    NSMutableArray *result = [[NSMutableArray alloc]initWithCapacity:beersArray.count];
     
     for (NSDictionary *dict in beersArray)
     {
         NSString *beerURLString = dict[@"image_thumb_url"];
-        NSString *beerID = dict[@"id"];
+        NSNumber *beerID = dict[@"id"];
         NSString *beerName = dict[@"name"];
         NSNumber *beerABV = dict[@"alchol_content"];
         NSString *beerTag = dict[@"tags"];
