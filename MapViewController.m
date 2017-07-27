@@ -26,7 +26,7 @@
     [super viewDidLoad];
     
     self.networkManager = [NetworkManager new];
-    [self.networkManager performStoreRequest:[NSString stringWithFormat:@"907147"] completionHandler:^(NSArray *stores)
+    [self.networkManager performStoreRequest:[NSString stringWithFormat:@"%@", self.myBeer.beerID] completionHandler:^(NSArray *stores)
      {
          self.stores = stores;
      }];
