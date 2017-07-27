@@ -20,26 +20,34 @@
 @property (strong, nonatomic) NSArray *beers;
 @property (strong, nonatomic) NetworkManager *networkManager;
 
+@property (weak, nonatomic) IBOutlet UIView *coverView;
+
 @end
 
 @implementation MenuViewController
 
 - (void)setBeers:(NSArray *)beers
 {
+    
     _beers = beers;
     dispatch_queue_t mainQ = dispatch_get_main_queue();
     dispatch_async(mainQ, ^{
         [self.collectionView reloadData];
+        
+       // self.coverView.hidden = YES;
     });
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    self.coverView.hidden = YES;
+    
     self.networkManager = [NetworkManager new];
-    [self.networkManager performRequest:@"beer+ale&per_page=50&page=1" completionHandler:^(NSArray *beers)
+    [self.networkManager performRequest:@"craft+beer&per_page=50&page=1" completionHandler:^(NSArray *beers)
      {
          self.beers = beers;
+         [self.collectionView reloadData];
      }];
     
     UIBarButtonItem *backButton = [[UIBarButtonItem alloc] initWithTitle:@""
@@ -50,6 +58,42 @@
     
   //  [self fancyUI];
 
+}
+
+- (IBAction)segmentTapped:(UISegmentedControl *)sender {
+    
+    NSInteger selectedSegment = sender.selectedSegmentIndex;
+    
+    if (selectedSegment == 0) {
+        
+        self.networkManager = [NetworkManager new];
+        [self.networkManager performRequest:@"craft+beer&per_page=50&page=1" completionHandler:^(NSArray *beers)
+         {
+             self.beers = beers;
+             [self.collectionView reloadData];
+             self.coverView.hidden = YES;
+         }];
+        
+    } else if (selectedSegment == 1 ) {
+        
+        self.networkManager = [NetworkManager new];
+        [self.networkManager performRequest:@"beer+lager&per_page=50&page=1" completionHandler:^(NSArray *beers)
+         {
+             self.beers = beers;
+             [self.collectionView reloadData];
+             self.coverView.hidden = YES;
+         }];
+       
+    } else if (selectedSegment == 2) {
+        
+        self.networkManager = [NetworkManager new];
+        [self.networkManager performRequest:@"beer+ale&per_page=50&page=1" completionHandler:^(NSArray *beers)
+         {
+             self.beers = beers;
+             [self.collectionView reloadData];
+             self.coverView.hidden = YES;
+         }];
+    }
 }
 
 #pragma mark - Datasource/Delegate
@@ -98,10 +142,7 @@
     }
 }
 
-- (IBAction)segmentTapped:(UISegmentedControl *)sender {
-    
-    
-}
+
 
 
 

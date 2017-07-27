@@ -69,7 +69,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Dark Blue Cover" translatesAutoresizingMaskIntoConstraints="NO" id="Z7p-60-Ac0">
-                                <rect key="frame" x="71" y="251" width="179" height="257"/>
+                                <rect key="frame" x="72" y="251" width="177" height="257"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
@@ -107,15 +107,15 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="4WO-pN-wmq">
-                                <rect key="frame" x="60.5" y="72" width="200" height="29"/>
+                                <rect key="frame" x="35" y="72" width="250" height="29"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="200" id="nuc-GP-qAx"/>
+                                    <constraint firstAttribute="width" constant="250" id="nuc-GP-qAx"/>
                                 </constraints>
                                 <segments>
                                     <segment title="Craft"/>
                                     <segment title="Lager"/>
                                     <segment title="Ale"/>
-                                    <segment title="Cider"/>
+                                    <segment title="Personal"/>
                                 </segments>
                                 <connections>
                                     <action selector="segmentTapped:" destination="e5p-Kc-gBO" eventType="valueChanged" id="bYm-g3-3DR"/>
@@ -160,26 +160,45 @@
                                     <outlet property="delegate" destination="e5p-Kc-gBO" id="hpx-oX-XfD"/>
                                 </connections>
                             </collectionView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tW7-Wd-pFM">
+                                <rect key="frame" x="0.0" y="108" width="320" height="460"/>
+                                <subviews>
+                                    <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="DXl-6e-Dy8">
+                                        <rect key="frame" x="150" y="220" width="20" height="20"/>
+                                    </activityIndicatorView>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="DXl-6e-Dy8" firstAttribute="centerY" secondItem="tW7-Wd-pFM" secondAttribute="centerY" id="XvH-Em-LZw"/>
+                                    <constraint firstItem="DXl-6e-Dy8" firstAttribute="centerX" secondItem="tW7-Wd-pFM" secondAttribute="centerX" id="Z0X-O8-SbL"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="tW7-Wd-pFM" firstAttribute="top" secondItem="4WO-pN-wmq" secondAttribute="bottom" constant="8" id="Jtf-XV-3V5"/>
+                            <constraint firstItem="tW7-Wd-pFM" firstAttribute="centerX" secondItem="dSk-89-ezX" secondAttribute="centerX" id="Nuw-lA-nwb"/>
+                            <constraint firstAttribute="trailing" secondItem="tW7-Wd-pFM" secondAttribute="trailing" id="Skz-Y3-gkf"/>
+                            <constraint firstItem="od1-oy-EUs" firstAttribute="top" secondItem="tW7-Wd-pFM" secondAttribute="bottom" id="TkM-4l-oQ1"/>
                             <constraint firstAttribute="trailing" secondItem="Q2I-N4-z5B" secondAttribute="trailing" id="Zff-Uj-RCB"/>
                             <constraint firstItem="Q2I-N4-z5B" firstAttribute="top" secondItem="4WO-pN-wmq" secondAttribute="bottom" constant="8" id="cqh-og-4Qc"/>
                             <constraint firstItem="od1-oy-EUs" firstAttribute="top" secondItem="Q2I-N4-z5B" secondAttribute="bottom" id="f3L-dc-DQa"/>
                             <constraint firstItem="4WO-pN-wmq" firstAttribute="centerX" secondItem="dSk-89-ezX" secondAttribute="centerX" id="hOd-J7-oIW"/>
                             <constraint firstItem="Q2I-N4-z5B" firstAttribute="leading" secondItem="dSk-89-ezX" secondAttribute="leading" id="jWs-ET-voe"/>
+                            <constraint firstItem="tW7-Wd-pFM" firstAttribute="leading" secondItem="dSk-89-ezX" secondAttribute="leading" id="lPp-Wd-PTU"/>
                             <constraint firstItem="4WO-pN-wmq" firstAttribute="top" secondItem="VUT-5u-CxU" secondAttribute="bottom" constant="8" id="qAP-TE-d9V"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Beer Me!" id="TWR-E1-SsG"/>
                     <connections>
                         <outlet property="collectionView" destination="Q2I-N4-z5B" id="hIw-KM-EJc"/>
+                        <outlet property="coverView" destination="tW7-Wd-pFM" id="a1j-cO-Zda"/>
                         <outlet property="segmentControl" destination="4WO-pN-wmq" id="DxH-SC-mhq"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Sgd-Gb-tF7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2971.875" y="124.64788732394366"/>
+            <point key="canvasLocation" x="2970" y="123.59154929577466"/>
         </scene>
         <!--Photo View Controller-->
         <scene sceneID="Z6G-gw-VCv">
