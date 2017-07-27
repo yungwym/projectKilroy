@@ -112,7 +112,7 @@
 
 - (void)performStoreRequest:(NSString*)query completionHandler:(void (^)(NSArray*))complete
 {
-    NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"https://lcboapi.com/stores?product_id=%@&access_key=%@", query, LCBO_APIKEY]];
+    NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"https://lcboapi.com/stores?product_id=%@&access_key=%@&per_page=100", query, LCBO_APIKEY]];
     NSURLRequest *urlRequest = [[NSURLRequest alloc]initWithURL:url];
     
     NSURLSessionConfiguration *configuration = [NSURLSessionConfiguration defaultSessionConfiguration];
@@ -164,7 +164,7 @@
         float longitude = longitudeNumber.floatValue;
         NSLog(@"latitude: %f & longitude: %f", latitude, longitude);
         
-        Store *store = [[Store alloc]initWithID:storeID andName:storeName andTags:storeTags andAddress1:storeAddress1 andAdress2:storeAddress2 andCity:storeCity andPostalCode:storePostalCode andLatitude:latitudeNumber andLongitude:latitudeNumber];
+        Store *store = [[Store alloc]initWithID:storeID andName:storeName andTags:storeTags andAddress1:storeAddress1 andAdress2:storeAddress2 andCity:storeCity andPostalCode:storePostalCode andLatitude:latitudeNumber andLongitude:longitudeNumber];
         
         [result addObject:store];
     }
