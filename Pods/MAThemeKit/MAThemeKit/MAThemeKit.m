@@ -6,7 +6,7 @@
 //  Copyright (c) 2014 Mike Amaral. All rights reserved.
 //
 
-static CGFloat const kDefaultNavigationBarFontSize = 22;
+static CGFloat const kDefaultNavigationBarFontSize = 16;
 static CGFloat const kDefaultTabBarFontSize = 14;
 
 #import "MAThemeKit.h"

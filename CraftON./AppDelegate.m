@@ -20,6 +20,8 @@
     
     [MAThemeKit setupThemeWithPrimaryColor:[MAThemeKit colorWithR:53 G:58 B:82] secondaryColor:[UIColor whiteColor] fontName:@"Futura-Medium" lightStatusBar:YES];
     
+        
+    
     return YES;
 }
 

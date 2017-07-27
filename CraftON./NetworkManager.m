@@ -65,7 +65,7 @@
         NSString *beerURLString = dict[@"image_thumb_url"];
         NSString *beerID = dict[@"id"];
         NSString *beerName = dict[@"name"];
-        NSNumber *beerABV = dict[@"alchol_content"];
+        NSNumber *beerABV = dict[@"alcohol_content"];
         NSString *beerTag = dict[@"tags"];
         NSString *beerSecondaryCategory = dict[@"secondary_category"];
         NSString *beerTertiaryCategory = dict[@"tertiary_category"];
