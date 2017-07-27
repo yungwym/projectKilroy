@@ -44,7 +44,8 @@
     
     
     
-    Store *currentClosestLocation = nil;
+    Store *currentClosestLocation = [[Store alloc]init];
+    
     CLLocation *currentUserLocation = [[CLLocation alloc]initWithLatitude:10.0 longitude:10.0];
     
     // query results
@@ -77,9 +78,28 @@
         
     }
     
-    //
+    //Testing
+    
+    GMSCameraPosition *camera = [GMSCameraPosition cameraWithLatitude:43.6453
+                                                            longitude:-79.3946
+                                                                 zoom:13];
+    self.mapView = [GMSMapView mapWithFrame:CGRectZero camera:camera];
+    
+    self.mapView.myLocationEnabled = YES;
+    self.view = self.mapView;
+    NSLog(@"User's location: %@", self.mapView.myLocation);
+    
+    // Creates a marker.
+    GMSMarker *marker = [[GMSMarker alloc] init];
+    marker.position = CLLocationCoordinate2DMake(43.6453, -79.3946);
+    marker.title = @"King & Spadina";
+    marker.snippet = @"Toronto";
+    marker.map = self.mapView;
     
     
+    
+    
+    /*
     int latitude = [currentClosestLocation.latitude intValue];
     int longitude = [currentClosestLocation.longitude intValue];
     NSString *name = currentClosestLocation.storeName;
@@ -99,7 +119,9 @@
     marker.position = CLLocationCoordinate2DMake(latitude, longitude);
     marker.title = name;
     marker.snippet = city;
-    marker.map = mapView;
+    marker.map = mapView;*/
+    
+    
 
     
 }
@@ -108,7 +130,7 @@
     CLLocation *lastLocation = [locations lastObject];
     
     GMSMarker *marker = [GMSMarker markerWithPosition:lastLocation.coordinate];
-    //self.mapView.myLocationEnabled = YES;
+    self.mapView.myLocationEnabled = YES;
     marker.title = @"My Location";
     marker.map = self.mapView;
     

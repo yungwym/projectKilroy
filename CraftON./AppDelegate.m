@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import <GoogleMaps/GoogleMaps.h>
 
 @interface AppDelegate ()
 
@@ -19,6 +20,8 @@
     // Override point for customization after application launch.
     
     [MAThemeKit setupThemeWithPrimaryColor:[MAThemeKit colorWithR:53 G:58 B:82] secondaryColor:[UIColor whiteColor] fontName:@"Futura-Medium" lightStatusBar:YES];
+    
+    [GMSServices provideAPIKey:@"AIzaSyCPvmzrbifM6ooAmHVa4BFGSvKXV-DR6Uk"];
     
     return YES;
 }
