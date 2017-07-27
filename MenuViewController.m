@@ -41,6 +41,15 @@
      {
          self.beers = beers;
      }];
+    
+    UIBarButtonItem *backButton = [[UIBarButtonItem alloc] initWithTitle:@""
+                                                                   style:UIBarButtonItemStylePlain
+                                                                  target:nil
+                                                                  action:nil];
+    [self.navigationItem setBackBarButtonItem:backButton];
+    
+  //  [self fancyUI];
+
 }
 
 #pragma mark - Datasource/Delegate
@@ -61,6 +70,8 @@
     
     Beer *beer = self.beers[indexPath.row];
     cell.beer = beer;
+    
+    [self fancyUI:cell];
     
     if (!beer.beerImage) // HERE SHOULD BE IMAGE OBJECT
     {
@@ -91,6 +102,17 @@
     
     
 }
+
+
+
+-(void)fancyUI:(BeerCollectionViewCell *)cell {
+    
+    cell.layer.borderColor = [UIColor colorWithRed:(53/255.0) green:(58/255.0) blue:(82/255.0) alpha:1.0].CGColor;
+    cell.layer.borderWidth = 4.0;
+    cell.layer.cornerRadius = 10.0;
+}
+
+
 
 
 

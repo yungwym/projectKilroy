@@ -41,7 +41,7 @@
                      }
                      completion:^(BOOL finished) {
                          
-                         [UIView animateWithDuration:1.0
+                         [UIView animateWithDuration:1.5
                                                delay:0.0
                                              options:UIViewAnimationOptionCurveEaseIn
                                           animations:^{
@@ -54,7 +54,7 @@
                                               
                                              
                                               
-                                              [self performSelector:@selector(showMenu) withObject:nil afterDelay:0.6];
+                                              [self performSelector:@selector(showMenu) withObject:nil afterDelay:1.0];
                                               
                                                
                                           }];
