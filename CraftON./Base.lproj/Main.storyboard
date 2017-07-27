@@ -160,7 +160,7 @@
                                     <outlet property="delegate" destination="e5p-Kc-gBO" id="hpx-oX-XfD"/>
                                 </connections>
                             </collectionView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tW7-Wd-pFM">
+                            <view hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tW7-Wd-pFM">
                                 <rect key="frame" x="0.0" y="108" width="320" height="460"/>
                                 <subviews>
                                     <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="DXl-6e-Dy8">

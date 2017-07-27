@@ -34,20 +34,20 @@
     dispatch_async(mainQ, ^{
         [self.collectionView reloadData];
         
-       // self.coverView.hidden = YES;
+        self.coverView.hidden = YES;
     });
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.coverView.hidden = YES;
     
     self.networkManager = [NetworkManager new];
+    self.coverView.hidden = NO;
     [self.networkManager performRequest:@"craft+beer&per_page=50&page=1" completionHandler:^(NSArray *beers)
      {
          self.beers = beers;
-         [self.collectionView reloadData];
+         //[self.collectionView reloadData];
      }];
     
     UIBarButtonItem *backButton = [[UIBarButtonItem alloc] initWithTitle:@""
@@ -56,8 +56,6 @@
                                                                   action:nil];
     [self.navigationItem setBackBarButtonItem:backButton];
     
-  //  [self fancyUI];
-
 }
 
 - (IBAction)segmentTapped:(UISegmentedControl *)sender {
@@ -66,32 +64,42 @@
     
     if (selectedSegment == 0) {
         
+        
+        
         self.networkManager = [NetworkManager new];
+        self.coverView.hidden = NO;
         [self.networkManager performRequest:@"craft+beer&per_page=50&page=1" completionHandler:^(NSArray *beers)
          {
+
              self.beers = beers;
-             [self.collectionView reloadData];
-             self.coverView.hidden = YES;
+            // [self.collectionView reloadData];
+
          }];
         
     } else if (selectedSegment == 1 ) {
         
+
+        
         self.networkManager = [NetworkManager new];
+        self.coverView.hidden = NO;
         [self.networkManager performRequest:@"beer+lager&per_page=50&page=1" completionHandler:^(NSArray *beers)
          {
              self.beers = beers;
-             [self.collectionView reloadData];
-             self.coverView.hidden = YES;
+            // [self.collectionView reloadData];
+
          }];
        
     } else if (selectedSegment == 2) {
+
+        
         
         self.networkManager = [NetworkManager new];
+        self.coverView.hidden = NO;
         [self.networkManager performRequest:@"beer+ale&per_page=50&page=1" completionHandler:^(NSArray *beers)
          {
              self.beers = beers;
-             [self.collectionView reloadData];
-             self.coverView.hidden = YES;
+           //  [self.collectionView reloadData];
+ 
          }];
     }
 }
